@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial scale=1.0"> 
+<title>Cooling Load Calculator</title> 
+<link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+<div class="container"> 
+<h1>Cooling Load Calculator</h1> 
+<form onsubmit="calculateCoolingLoad(event)"> 
+<label for="area">Enter area of the building (in sq. meters):</label> 
+<input type="number" id="area" required> 
+<label for="occupants">Enter number of occupants in the  building:</label> 
+<input type="number" id="occupants" required> 
+<label for="buildingType">Select type of building:</label> <select id="buildingType" required> 
+<option value="residential">Residential</option> 
+<option value="commercial">Commercial</option> 
+</select> 
+<label for="outdoorTemp">Enter outdoor temperature  
+(in Celsius):</label> 
+<input type="number" id="outdoorTemp" required> 
+<label for="indoorTemp">Enter indoor desired temperature  (in Celsius):</label> 
+<input type="number" id="indoorTemp" required> 
+<button type="submit">Calculate</button> 
+</form> 
+<div id="result"></div> 
+</div> 
+<script src="function.js"></script> 
+</body> 
+</html>
